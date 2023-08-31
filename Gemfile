@@ -34,7 +34,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'alphavantage' #EED8A2Z27TJRQE32
 gem 'httparty'
-
+gem "font-awesome-rails"
 
  
 
