@@ -1,9 +1,15 @@
-<%= render 'layouts/messages'%>
+<div class="row">
+    <div class="col-9">
+        <div class="results-block">
+            <%= render 'layouts/messages'%>
+        </div>
 
-<% if @stock %>
-    <div class="card card-header results-block">
-        <strong>Symbol: </strong> <%= @stock.ticker %>
-        <strong>Company name:</strong> <%= @stock.name %> 
-        <strong>Last price: </strong> <%= @stock.last_price %> 
+        <% if @stock %>
+            <div class="card card-header results-block">
+                <strong>Symbol: </strong> <%= @stock.ticker %>
+                <strong>Company name:</strong> <%= @stock.name %> 
+                <strong>Last price: </strong> <%= @stock.last_price %> 
+            </div>
+        <% end %>
     </div>
-<% end %>
+</div>
